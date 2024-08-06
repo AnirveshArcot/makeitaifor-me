@@ -4,6 +4,7 @@ import Navbar from "@/components/landing-page/Navbar";
 import Sidebar from "@/components/modules-page/Sidebar";
 import GoogleSearch from "@/components/modules-page/modules/GoogleSearch";
 import CitedContentDisplay from "@/components/CitedContentDisplay";
+import SendEmailToFounder from "@/components/modules-page/modules/SendEmailToFounder";
 
 const ModulesIndex = () => {
   const [user, setUser] = useState(null);
@@ -21,12 +22,7 @@ const ModulesIndex = () => {
         <Sidebar />
         <div className="md:ml-48 p-4 w-full min-h-screen center-div mx-auto">
           <GoogleSearch />
-          <section
-            id="section2"
-            className="h-screen bg-orange-500 mb-4 rounded p-4 pb-20"
-          >
-            Module 2
-          </section>
+          <SendEmailToFounder/>
         </div>
       </div>
     </main>
